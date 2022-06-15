@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: rgba(10, 10, 10, 0.9);
+}
+
+.carousel {
+    position: relative;
+    width: 1000px;
+    margin: 0px auto;
+    border: 2px solid rgba(250, 250, 250, 1);
+    overflow: hidden;
+}
+
+.scene {
+    display: none;
+    width: inherit;
+}
+
+img {
+    width: 100%;
+    height: 600px;
+    margin: 0%;
+}
+
+.visible {
+    display: block;
+    animation: transition 1s;
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    background-color: rgba(30, 30, 30, 0.6);
+    color:rgba(250, 250, 250, 1);
+    margin: 0%;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.btn-cont {
+    /*container positioning*/
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    transform:translateY(-50%);
+
+    /*container property*/
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+button {
+    padding: 50px 20px;
+    background-color: rgba(30, 30, 30, 0.6);
+    color: rgba(250, 250, 250, 0.9);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+button:hover {
+    background-color: rgba(250, 250, 250, 0.5);
+    color: rgba(30, 30, 30, 0.6);
+}
+
+#slide div {
+    display: inline-block;
+    margin: 20px 7px;
+    padding: 8px;
+    border: 1px solid rgba(250, 250, 250, 1);
+    border-radius: 50%;
+}
+
+.active{
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.inactive{
+    background-color: rgba(30, 30, 30, 0.6);
+}
+
+@keyframes transition {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

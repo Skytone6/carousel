@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="carousel">
+        <div class="scene visible">
+            <img src="castle.jpg" alt="Wintery Castle">
+            <p>Wintery Castle</p>
+        </div>
+
+        <div class="scene">
+            <img src="chalet.jpg" alt="Comfy Chalet">
+            <p>Comfy Chalet</p>
+        </div>
+
+        <div class="scene">
+            <img src="mountain.jpg" alt="Snowy Mountain">
+            <p>Snowy Mountain</p>
+        </div>
+
+        <div class="scene">
+            <img src="river.webp" alt="Winding River">
+            <p>Winding River</p>
+        </div>
+
+        <div class="scene">
+            <img src="winterbg.jpg" alt="Frosty Sunrise">
+            <p>Frosty Sunrise</p>
+        </div>
+
+        <div class="btn-cont">
+            <button id="left-btn" aria-label="Previous Scene"><</button>
+            <button id="right-btn" aria-label="Next Scene">></button>
+        </div>
+    </div>
+
+    <div id="slide">
+        <div class="circle active"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
